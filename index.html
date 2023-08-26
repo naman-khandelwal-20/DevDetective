@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <header class="header">
+                <h1 class="title">DevDetective</h1>
+                <div id="btn-mode">
+                    <p id="mode-text">Dark</p>
+                   <div class="icon-container"> <i class='fas fa-moon'  id="mode-icon"></i></div>
+                </div>
+            </header>
+            <div id="app">
+                <div class="searchbar-container active">
+                    <i class="fa fa-search logo" aria-hidden="true"></i>
+                    <input type="search" name="user-input" id="input" required placeholder="Enter a GitHub username...">
+              
+                    <button class="btn-search" id="submit">Serch</button>
+                </div>
+                <div class="error">
+                    <P id="no-results"> Result Not Found</P>
+                </div>
+            </div>
+            <div class="profile-container">
+                <div class="profile-content">
+
+                    <div class="profile-header">
+                        <div class="">
+                            <img src="photo-1512036666432-2181c1f26420.jpeg" id="avatar" alt="">
+                        </div>
+                        <div class="profile-info-wrapper">
+                            <div class="profile-name">
+                                <div class="name-id">
+                                    <h1 id="name"></h1>
+                                    <a href="#" target="_blank" rel="noopener noreferrer" id="user"></a>
+                                </div>
+                                <div>
+                                    <p id="date"></p>
+                                </div>
+                            </div>
+
+
+                            <p id="bio"></p>
+
+                            <div class="profile-stats-wrapper">
+                                <div class="profile-stat">
+                                    <p class="stat-title">Repos</p>
+                                    <p id="repos" class="stat-value"></p>
+                                </div>
+                                <div class="profile-stat">
+                                    <p class="stat-title">followers</p>
+                                    <p class="stat-value" id="following"></p>
+                                </div>
+                                <div class="profile-stat">
+                                    <p class="stat-title"> Following</p>
+                                    <p class="stat-value" id="followers"></p>
+                                </div>
+                            </div>
+                            <div class="profile-bottom-wrapper">
+                                <div class="profile-info " id="div_location">
+                                    <div class="bottom-icons"> <i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                                    <p class="location" id="location"></p>
+                                </div>
+                                <div class="profile-info" id="div_blg">
+                                    <div class="bottom-icons"><i class="fa fa-link" aria-hidden="true"></i></div>
+                                    <a href="#" id="page" class="blog"></a>
+                                </div>
+                                <div class="profile-info" id="div_twitter">
+                                    <div class="bottom-icons"><img src="twitter-icon.svg" alt=""></div>
+                                    <a href="#" id="twitter" class="twitter "></a>
+                                </div>
+                                <div class="profile-info" id="div_company">
+                                    <div class="bottom-icons"> <i class="fa fa-building" aria-hidden="true"></i></div>
+                                    <p id="company" class="company"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script src="index.js"></script>
+</body>
+
+</html>
